@@ -20,7 +20,7 @@ int main() {
     string sentence; // variable to store the sentence
     
     inFile.open("inData.txt"); // Opens the file named "inData.txt"
-    outFile.open("outData.out"); // Opens the file name "outData.txt"
+    outFile.open("outData.txt"); // Opens the file name "outData.txt"
     
     cout << "Processing data" << endl; // prints this message
 
