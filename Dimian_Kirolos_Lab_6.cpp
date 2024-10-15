@@ -15,7 +15,7 @@ int main() {
     ofstream outFile; //output file stream variable
     int integer1, integer2; // variable to store the integer
     int integerSum; // variable to store the sum
-    char character; // variable to store the character
+    char character, newCharacter; // variable to store the character
     int charAscii; // variable to store the value of the character
     string sentence; // variable to store the sentence
     
@@ -30,7 +30,8 @@ int main() {
     
     inFile >> character; // Gets the data from the character
     charAscii = character; // Makes the character have its numerical ASCII value
-    outFile << "The ASCII value of " << character << " is " << charAscii << endl; // Prints the value of the character
+    newCharacter = charAscii + 1; // Makes sure to record the next letter
+    outFile << "The letter that comes after " << character << " is " << newCharacter << endl; // Prints the next letter
 
     inFile >> sentence; // Gets the data from the sentence
     outFile << sentence << endl; // Prints the sentence
